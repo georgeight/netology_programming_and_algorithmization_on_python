@@ -1,4 +1,4 @@
-if git show-ref --quiet jopa && git show-ref --quiet prd;
+if git show-ref --quiet dev && git show-ref --quiet prd;
 then
     echo "Branches are OK"
 else
