@@ -12,5 +12,9 @@ read -p "Enter revision tag message: " tag_message
 git tag -a $tag_name -m "$tag_message"
 
 
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+
 git checkout prd
 git merge dev
+
+git checkout $current_branch
